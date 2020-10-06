@@ -1,15 +1,23 @@
 Elevated Dreams
+
 ##############################
 
 Team Name: Elevated Dreams
 
 Team Member Names:
+
 Vincent Préseault - Student Number 300170802
+
 Karen Dhindsa - Student Number
+
 Mounira Nihad Zitouni - Student Number
+
 Amin Arshadi - Student Number
+
 Charlie Haldane - Student Number
+
 Dominic Salas - Student Number
+
 Souleymane Diallo - Student Number
 
 Description:
