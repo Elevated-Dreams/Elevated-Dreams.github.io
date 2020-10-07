@@ -12,11 +12,11 @@ Karen Dhindsa - Student Number
 
 Mounira Nihad Zitouni - Student Number 300190536
 
-Amin Arshadi - Student Number
+Amin Arshadi - Student Number 300189176
 
-Charlie Haldane - Student Number
+Charlie Haldane - Student Number 300129685
 
-Dominic Salas - Student Number
+Dominic Salas - Student Number 300169706
 
 Souleymane Diallo - Student Number
 
