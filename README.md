@@ -8,7 +8,7 @@ Team Member Names:
 
 Vincent Préseault - Student Number 300170802
 
-Karen Dhindsa - Student Number
+Karen Dhindsa - Student Number 300193847
 
 Mounira Nihad Zitouni - Student Number 300190536
 
