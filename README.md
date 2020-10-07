@@ -16,7 +16,7 @@ Amin Arshadi - Student Number
 
 Charlie Haldane - Student Number 300129685
 
-Dominic Salas - Student Number
+Dominic Salas - Student Number 300169706
 
 Souleymane Diallo - Student Number
 
