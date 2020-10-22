@@ -1,13 +1,12 @@
 Look and Feel
 ---------------------------
-
 We are going for a very colorful and photo extensive design.
 We want it to be peaceful and calming but also nice to look which is 
 why we wanted to add a lot of pictures.
 
+
 Colors
 ---------------------------
-
 We wanted to go for a relatively simple color scheme without being bland
 and colorless. We also tried to tailor our choices to the colors that are
 more prominently found in the pictures from our website.
@@ -17,20 +16,38 @@ more prominently found in the pictures from our website.
     - #38c7ff (sky blue)
     - #ffa200 (orange)
 
+
 Iconography
 ---------------------------
-
-We mostly used black and white icon that are flat.
+We mostly used black and white icons that are flat.
 We only used icons when it was a smaller section of the website and
 didn't require a full picture to convey the idea/message of that section.
+
 
 Typography
 ---------------------------
 We decided to use a combination of three fonts from Google fonts:
-    - Kalam
-    - Lora
-    - Titillium Web
+    - Kalam (Titles/Important elements)
+    - Lora (Subtitles)
+    - Titillium Web (Normal text)
 
 We wanted to make sure to have enough variety and we also strategically
 used certain fonts to accentuate important elements we wanted the user
 to really be drawn to.
+
+
+Links
+---------------------------
+We decided to have no text decoration for our links and they will not
+change color when clicked or hovered.
+
+Buttons
+---------------------------
+We decided to have flat but colorful buttons. We thought it would be more calm
+and peaceful to accentuate buttons through colors and not aggressive
+animations.
+
+Navigation
+---------------------------
+We have a simple and minimalist designed Nav Bar which will help users
+navigate the various different pages on the website.
