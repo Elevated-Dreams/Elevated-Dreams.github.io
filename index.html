@@ -26,7 +26,6 @@
                 list-style-type: none;
                 margin: auto;
                 padding: 0;
-                
             }
 
             #nav-bar li {
@@ -68,6 +67,34 @@
                 height: 100%;
             }
 
+            .product-copy-container {
+                display: flex;
+            }
+
+            .product-copy {
+                padding: 5%;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .product-copy h1 {
+                font-family: Kalam;
+                font-size: 300%;
+            }
+
+            .product-copy-variant {
+                margin: 40px 0px;
+            }
+
+            .product-copy-variant h2 {
+                font-family: titillium web;
+                margin-bottom: 10px;
+            }
+
+            .product-copy-variant p {
+                font-size: 110%;
+            }
+
             #stats-container {
                 display: flex;
                 margin: auto;
@@ -82,7 +109,7 @@
                 padding: 0px 50px;
                 text-align: center;
                 color: white;
-                border: white 3px solid;
+                /* border: white 3px solid; */
                 border-radius: 50px;
                 font-size: 125%;
             }
@@ -90,8 +117,50 @@
             .percentage {
                 font-family: Kalam;
                 color: skyblue;
-                margin: 50px 0px 15px 0px;
+                margin: 50px 0px 25px 0px;
                 text-align: center;
+            }
+
+            .store-container {
+                padding: 5% 0%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .store-container h1 {
+                font-size: 300%;
+                font-family: Kalam;
+                margin-bottom: 40px;
+            }
+
+            .store-variant-container {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .store-variant {
+                text-align: center;
+                width: 25%;
+                margin: auto;
+                border-radius: 25px;
+                height: 250px;
+                padding: 20px;
+                box-shadow: 0 0 10px #2b2d2f;
+            }
+
+            .store-variant h3 {
+                font-size: 150%;
+                font-family: Titillium Web;
+            }
+
+            .description {
+
+            }
+
+            .store-button-container {
+                margin-top: 75px;
+                
             }
 
             .company-container {
@@ -109,11 +178,11 @@
             }
 
             .company-copy p {
-                margin: 0px 0px 40px 0px;
+                margin-bottom: 40px;
+                font-size: 110%;
             }
 
-            .company-copy a {
-                width: 100%;
+            .button {
                 padding: 10px 25px;
                 font-size: 110%;
                 font-family: Titillium Web;
@@ -121,8 +190,86 @@
                 color: black;
                 border-radius: 20px;
                 background-color: skyblue;
+                font-weight: bold;
             }
 
+            .button-container {
+                margin-top: 75px;
+            }
+
+            .faq-container {
+                background-color: #2b2d2f;
+                color: white;
+                padding: 5%;
+            }
+
+            .faq-container h1 {
+                font-family: Kalam;
+                font-size: 300%;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+
+            .question {
+                font-size: 150%;
+                margin-bottom: 25px;
+                font-family: titillium web;
+            }
+            
+            .answer {
+                margin-bottom: 40px;
+            }
+
+            .important {
+                color: skyblue;
+            }
+
+            .footer-container {
+                padding: 5%;
+                color: white;
+                background-color: #2b2d2f;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .footer-variant {
+                width: 25%;
+            }
+
+            .footer-variant h1 {
+                color: skyblue;
+                font-family: Kalam;
+                margin-bottom: 10px;
+            }
+
+            .footer-variant h2 {
+                font-family: titillium web;
+            }
+
+            .footer-variant div {
+                display: flex;
+                margin-bottom: 5px;
+            }
+
+            .footer-variant div img {
+                padding-right: 5px;
+            }
+
+            .footer-variant ul {
+                list-style: none;
+                
+            }
+
+            .footer-variant li a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .icon {
+                width: 20px;
+            }
+
+            
 
         </style>
         <title>Home</title>
@@ -134,10 +281,10 @@
             <div id="nav-bar">
                 <ul>
                     <li><a href="index.html" class="underline">Home</a></li>
-                    <li><a href="about.html" class="nav-item">About Product</a></li>
+                    <li><a href="about.html" class="nav-item">About The Products</a></li>
                     <li><a href="store.html" class="nav-item">Store</a></li>
                     <li><a href="FAQ.html" class="nav-item">FAQ</a></li>
-                    <li><a href="AboutCompany.html" class="nav-item">About Company</a></li>
+                    <li><a href="AboutCompany.html" class="nav-item">About Us</a></li>
                 </ul>
             </div>
             
@@ -151,28 +298,132 @@
             </div>
 
 
+            <div class="product-copy-container">
+                <img src='images/forest-window.png' alt='Product' style='width: 50%; height: 1000px; object-fit: cover;'>
+                <div class="product-copy">
+                    <h1>About our Products</h1>
+                    <div class="product-copy-variant">
+                        <h2>Basic Package</h2>
+                        <p>
+                            This screen is perfect for someone who finds the view outside their 
+                            plane window distracting or frightening. It will allow you to have 
+                            a stagnant picture or color of your choice to completely block the 
+                            view. This will help you accomplish more work and be more productive 
+                            during your flight and help mitigate your fear. 
+                        </p>
+                    </div>
+                    <div class="product-copy-variant">
+                        <h2>Premium Package</h2>
+                        <p>
+                            This screen is perfect for someone who, at times, enjoys the view 
+                            outside a plane window. With the camera mounted in the back of the 
+                            screen you can either display the live pictures outside or display 
+                            a stagnant picture or color. The premium version will increase your 
+                            productivity when it’s time to work but display the beautiful view 
+                            on your down time.
+                        </p>
+                    </div>
+                    <div class="product-copy-variant">
+                        <h2>Travel Case</h2>
+                        <p>
+                            The Travel Case is a sleeve that you can insert your screen into to 
+                            protect it. This will ensure your screens protection at all times 
+                            while still being small and portable enough to fit inside your 
+                            carry-on.
+                        </p>
+                    </div>
+                    <div class="button-container">
+                        <a href="about.html" class='button'>Learn more about our products!</a>
+                    </div>
+                </div>
+            </div>
+
+
             <div id="stats-container">
                 <div class="stats">
                     <div class="percentage">
-                        <h1>92%</h1>
+                        <h1>72%</h1>
                     </div>
                     <p>of people felt more relaxed during their flight.</p>
                 </div>
                 <div class="stats">
                     <div class="percentage">
-                        <h1>97%</h1>
+                        <h1>79%</h1>
                     </div>
                     <p>of people felt more productive during their flight.</p>
                 </div>
                 <div class="stats">
                     <div class="percentage">
-                        <h1>89%</h1>
+                        <h1>64%</h1>
                     </div>
                     <p>of people felt less fear during their flight.</p>
                 </div>
             </div>
-        
             
+
+            <div class="store-container">
+                <h1>Store</h1>
+                <div class="store-variant-container">
+                    <div class="store-variant">
+                        <img>
+                        <h3>Basic Package</h3>
+                        <p class="description">Perfect for the productivity seeking flyer.</p>
+                    </div>
+                    <div class="store-variant">
+                        <img>
+                        <h3>Premium Package</h3>
+                        <p class="description">Perfect for the fear-free seeking flyer.</p>
+                    </div>
+                    <div class="store-variant">
+                        <img>
+                        <h3>Travel Case</h3>
+                        <p class="description">Perfect for the protection of any Elevated Dreams screen.</p>
+                    </div>
+                </div>
+                <div class="store-button-container">
+                    <a href="store.html" class="button">Visit our store!</a>
+                </div>
+            </div>
+
+
+            <div class="faq-container">
+                <h1>Most Frequently Asked Questions</h1>
+                <div class="questions-container">
+                    <p class="question">How does the screen work?</p>
+                    <p class="answer">
+                        Every screen is mounted to the window with a camera between the screen 
+                        and the window. You are able to display any picture you want or choose 
+                        from the library provided in the picture library. The camera is used to 
+                        display the live images of the view outside for people who aren't afraid 
+                        of seeing what's outside. 
+                    </p>
+
+                    <p class="question">How fast will I receive the product?</p>
+                    <p class="answer">
+                        We offer 1-2 business day express shipping for North-American customers, 
+                        but we also offer shipping internationally that takes 
+                        <span class='important'>5-7 business days</span>.
+                    </p>
+
+                    <p class="question">How is your company helping the environment?</p>
+                    <p class="answer">
+                        We use <span class='important'>100% recycled plastic</span> in the manufacturing 
+                        of the plastic casing around our electronics. Also, we try as much as we can to 
+                        use recycled electronics from old screens. However, since these are much less 
+                        accessible than recycled plastic we sometimes have to resort to creating our 
+                        screen from non-recycled electronic parts.
+                    </p>
+
+                    <p class="question">How much does it cost?</p>
+                    <p class="answer">
+                        The cost for the basic screen (without the camera) is <span class='important'>$99</span>. 
+                        For the premium version that includes both the screen and the outside view camera, the cost 
+                        is <span class='important'>$149</span>.
+                    </p>
+                </div>
+            </div>
+
+
             <div class="company-container">
                 <div class="company-copy">
                     <h1>The Team</h1>
@@ -199,12 +450,47 @@
                         high tech, finance, telecommunications, government, health care, transportation 
                         and entertainment.
                     </p>
-                    <a href="AboutCompany.html" class='team-button'>Learn more about the team!</a>
+                    <div class="button-container">
+                        <a href="AboutCompany.html" class='button'>Learn more about the team!</a>
+                    </div>
                 </div>
-                <img src="images/team.jpg" alt="Company picture" width='50%'>
+                <img src="images/team.jpg" alt="Company picture" style='width: 50%; object-fit: cover;'>
             </div>
 
 
+            <div class="footer-container">
+                <div class="footer-variant">
+                    <h1>Elevated Dreams</h1>
+                    <p>
+                        Here at Elevated Dreams we strive to give the most relaxing and 
+                        productive flying experience possible.
+                    </p>
+                </div>
+                <div class="footer-variant">
+                    <h2>Contact</h2>
+                    <div>
+                        <img src='images/email-white.png' alt='email icon' class='icon'> 
+                        <p>vpres007@uottawa.ca</p>
+                    </div>
+                    <div>
+                        <img src='images/011-instagram-white.png' alt='instagram icon' class='icon'>
+                        <p>@ElevatedDreams</p>
+                    </div>
+                </div>
+                <div class="footer-variant">
+                    <h2>Key Links</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About The Products</a></li>
+                        <li><a href="store.html">Store</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="AboutCompany.html">About Us</a></li>
+                        <li><br></li>
+                        <li>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik" style='text-decoration: underline;'>Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" style='text-decoration: underline;'> www.flaticon.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
         </div>
         
         
