@@ -1,41 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium Web">
         <title>About the Company</title>
         <meta name="author" content="Dominic Salas">
         <meta name="description" content="About the Company">
         <style>
-        
-        body{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin-left: auto;
-            margin-right: auto;
-            background-image: url(./images/beach_background.jpeg);
-        }
-        a{
-            color: rgb(37, 95, 255);
-            border: 3px solid black;
-            text-decoration: none;
-            background-color: rgb(255, 245, 153);
-            padding: 5px;
-        }
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            body{
+                font-family: lora;
+                background-color: white;
+            }
+
+            #nav-bar {
+                width: 100%;
+                height: 10%;
+                position: fixed;
+                display: flex;
+                background-color: transparent;
+                transition: ease 0.5s;
+                font-family: Titillium Web;
+            }
+
+            #nav-bar ul {
+                list-style-type: none;
+                margin: auto;
+                padding: 0;
+            }
+
+            #nav-bar li {
+                display: inline-block;
+            }
+
+            #nav-bar a {
+                color: black;
+                text-decoration: none;
+                margin-left: 50px;
+                top: 5%;
+            }
+
+            .underline {
+                border-bottom: black 1px solid;
+                padding-bottom: 5px;
+            }
+
+            #banner{
+                max-height:400px;
+                overflow: hidden;
+            }
+
+            .banner-content {
+                text-align: center;
+                position: absolute;
+                top: 24%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: black;
+            }
+
+            .banner-content p {
+                font-size: 250%;
+                font-weight: bolder;
+                font-family: Kalam;
+            }
+
+            .banner-content img{
+                width: 300px;
+                height: 100px;
+            }
+
+            #goals{
+                display: flex;
+            }
+
+            .goals-content{
+                padding: 5%;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .goals-content h1 {
+                font-family: Kalam;
+                font-size: 300%;
+                padding-bottom: 20px;
+            }
+
+            .goals-content p {
+                text-indent: 5%;
+                margin-bottom: 40px;
+                font-size: 110%;
+                object-fit: fill;
+            }
+
+            .footer-container {
+                padding: 5%;
+                color: white;
+                background-color: #2b2d2f;
+                display:flex;
+                justify-content: space-between;
+            }
+
+            .footer-variant {
+                width: 25%;
+            }
+
+            .footer-variant h1 {
+                color: skyblue;
+                font-family: Kalam;
+                margin-bottom: 10px;
+            }
+
+            .footer-variant h2 {
+                font-family: titillium web;
+            }
+
+            .footer-variant div {
+                display: flex;
+                margin-bottom: 5px;
+            }
+
+            .footer-variant div img {
+                padding-right: 5px;
+            }
+
+            .footer-variant ul {
+                list-style: none;
+                
+            }
+
+            .footer-variant li a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .footer-variant a{
+                text-decoration: none;
+                color: white;
+            }
+            .icon {
+                width: 20px;
+            }
         </style>
     </head>
-        <h1 style="color:rgb(24, 86, 255);">About the Company</h1>
     <body>
-        <img src="./images/people-workplace.jpg" alt="People Working" width="250" height="187.5">
-        <h4 style="color: rgb(138, 169, 255);">The Best Haiku Ever</h4>
-        <p>I eat rocks and stuff <br>
-        <em>tasty tasty tasty good</em><br>
-        <strong>2 crunchy 4 me</strong>
-    </p>
-    <p>
-        <h6 style="color: rgb(143, 173, 255)";>by Dominic Salas</h6>
-        <a href="https://media.gettyimages.com/photos/tricycle-picture-id157913642?s=612x612" style="font-size: small;"><b>Picture of a Tricycle</b></a>
-    </p>
-    <a href="./Home.html" style="font-size: small;"><b>Back to Home</b></a>
+        <div id="nav-bar">
+            <ul>
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="about.html" class="nav-item">About The Products</a></li>
+                <li><a href="store.html" class="nav-item">Store</a></li>
+                <li><a href="FAQ.html" class="nav-item">FAQ</a></li>
+                <li><a href="AboutCompany.html" class="underline">About Us</a></li>
+            </ul>
+        </div>
 
-    </body>
-    </body>
+        <div id="banner">
+            <img src="./images/people-workplace.jpg" alt="People Working">
+            <div class = "banner-content">
+                <p>About the Company</p>
+            </div>
+        </div>
+
+        <div id="goals">
+            <img src='images/planning.jpg' alt='Product' style='width: 50%; height: 100; object-fit: cover;'>
+            <div class = "goals-content">
+                <h1>Our Goals</h1>
+                <p>
+                    We are a team of students from the University of Ottawa in hopes of creating 
+                    a product that helps people who are afraid of flying in planes. The team 
+                    comprises the following seven students: Amin Arshadi, Karen Dhindsa, Souleymane 
+                    Diallo, Charlie Haldane, Vincent Préseault, Dominic Salas and Mounira Nihad 
+                    Zitouni.
+                </p>
+                <p>
+                    This Website was created for the SEG 2900 course for Software Engineering and 
+                    Computer Science students. The goal was to solve a common problem by creating 
+                    a product and then making a website to market the product. This will teach us 
+                    the fundamentals of programming and web design to prepare us for our five CO-OP 
+                    placements during our degree.
+                </p>
+                <p>
+                    Software engineering is a CO-OP only program that emphasizes innovation and 
+                    teamwork to develop practical, solution-driven thinking. They learn how to 
+                    apply engineering principles—including rapid prototyping, requirements analysis, 
+                    system modelling, design, implementation, testing and project management—to 
+                    develop software. Software engineers are key professionals in fields such as 
+                    high tech, finance, telecommunications, government, health care, transportation 
+                    and entertainment.
+                </p>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="footer-variant">
+                <h1>Elevated Dreams</h1>
+                <p>
+                    Here at Elevated Dreams we strive to give the most relaxing and 
+                    productive flying experience possible.
+                </p>
+            </div>
+            <div class="footer-variant">
+                <h2>Contact Us</h2>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: vpres007@uottawa.ca">Vinvent Préseault</a>
+                </div>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: aarsh081@uottawa.ca">Amin Arshadi</a>
+                </div>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: sdial064@uottawa.ca">Souleymane Diallo</a>
+                </div>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: chald090@uottawa.ca">Charlie Haldane</a>
+                </div>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: mzito042@uottawa.ca">Mounira Nihad Zitouni</a>
+                </div>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: kdhin052@uottawa.ca">Karen Dhindsa</a>
+                </div>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: dsala011@uottawa.ca">Dominic Salas</a>
+                </div>
+                <div>
+                    <img src='images/011-instagram-white.png' alt='instagram icon' class='icon'>
+                    <p>@ElevatedDreams</p>
+                </div>
+            </div>
+            <div class="footer-variant">
+                <h2>Key Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About The Products</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="AboutCompany.html">About Us</a></li>
+                    <li><br></li>
+                    <li>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik" style='text-decoration: underline;'>Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" style='text-decoration: underline;'> www.flaticon.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            window.onscroll = function() {
+                const nav = document.getElementById('nav-bar');
+                if (window.pageYOffset > 400) {
+                    nav.style.backgroundColor = 'white';
+                } else {
+                    nav.style.backgroundColor = 'transparent';
+                }
+            }
+
+            var elements = document.getElementsByClassName("nav-item");
+
+            for (i = 0; i < elements.length; i++) {
+                elements[i].addEventListener('mouseenter', function(e) {
+                    this.classList.add('underline');
+                })
+                elements[i].addEventListener("mouseleave", function(e) {
+                    this.classList.remove('underline');
+                })
+            }
+        </script>
+        
+    </p>
 </html>
