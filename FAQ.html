@@ -1,6 +1,81 @@
+<!DOCTYPE html>
 <html>
+    <head>
+        <style>
+
+           
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            #nav-bar {
+                width: 100%;
+                height: 10%;
+                position: fixed;
+                display: flex;
+                background-color: transparent;
+                transition: ease 0.5s;
+                font-family: Titillium Web;
+            }
+
+            #nav-bar ul {
+                list-style-type: none;
+                margin: auto;
+                padding: 0;
+            }
+
+            #nav-bar li {
+                display: inline-block;
+            }
+
+            #nav-bar a {
+                color: black;
+                text-decoration: none;
+                margin-left: 50px;
+                top: 5%;
+            }
+
+            .underline {
+                border-bottom: black 1px solid;
+                padding-bottom: 5px;
+            }
+            /*HERE*/
+        </style>
+    </head>
     <body>
-        FAQ
-        
+        <!--COPY DIV "nav-bar" AND "<script>" BELOW-->
+        <div id="nav-bar">
+            <ul>
+                <li><a href="index.html" class="underline">Home</a></li>
+                <li><a href="about.html" class="nav-item">About The Products</a></li>
+                <li><a href="store.html" class="nav-item">Store</a></li>
+                <li><a href="FAQ.html" class="nav-item">FAQ</a></li>
+                <li><a href="AboutCompany.html" class="nav-item">About Us</a></li>
+            </ul>
+        </div>
+
+        <script>
+            window.onscroll = function() {
+                const nav = document.getElementById('nav-bar');
+                if (window.pageYOffset > 750) {
+                    nav.style.backgroundColor = 'white';
+                } else {
+                    nav.style.backgroundColor = 'transparent';
+                }
+            }
+
+            var elements = document.getElementsByClassName("nav-item");
+
+            for (i = 0; i < elements.length; i++) {
+                elements[i].addEventListener('mouseenter', function(e) {
+                    this.classList.add('underline');
+                })
+                elements[i].addEventListener("mouseleave", function(e) {
+                    this.classList.remove('underline');
+                })
+            }
+        </script>
+        <!--HERE-->
     </body>
 </html>
