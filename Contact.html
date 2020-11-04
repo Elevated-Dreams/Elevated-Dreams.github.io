@@ -1,6 +1,189 @@
 <html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium Web">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: Lora;
+            }
+
+            #nav-bar {
+                width: 100%;
+                height: 10%;
+                display: flex;
+                background-color: white;
+                transition: ease 0.5s;
+                font-family: Titillium Web;
+            }
+
+            #nav-bar ul {
+                list-style-type: none;
+                margin: auto;
+                padding: 0;
+            }
+
+            #nav-bar li {
+                display: inline-block;
+            }
+
+            #nav-bar a {
+                color: black;
+                text-decoration: none;
+                margin-left: 50px;
+                top: 5%;
+            }
+
+            .underline {
+                border-bottom: black 1px solid;
+                padding-bottom: 5px;
+            }
+
+
+            /* Enter CSS Style Here */
+
+
+            .footer-container {
+                padding: 5%;
+                color: white;
+                background-color: #2b2d2f;
+                display:flex;
+                justify-content: space-between;
+            }
+
+            .footer-variant {
+                width: 25%;
+            }
+
+            .footer-variant h1 {
+                color: skyblue;
+                font-family: Kalam;
+                margin-bottom: 10px;
+            }
+
+            .footer-variant h2 {
+                font-family: titillium web;
+            }
+
+            .footer-variant div {
+                display: flex;
+                margin-bottom: 5px;
+            }
+
+            .footer-variant div img {
+                padding-right: 5px;
+            }
+
+            .footer-variant ul {
+                list-style: none;
+                
+            }
+
+            .footer-variant li a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .footer-variant a{
+                text-decoration: none;
+                color: white;
+            }
+            .icon {
+                width: 20px;
+                height: 20px;
+            }
+        </style>
+    </head>
     <body>
 
+        <div id="nav-bar">
+            <ul>
+                <li><a href="index.html" class="nav-item">Home</a></li>
+                <li><a href="about.html" class="nav-item">About The Products</a></li>
+                <li><a href="store.html" class="nav-item">Store</a></li>
+                <li><a href="FAQ.html" class="nav-item">FAQ</a></li>
+                <li><a href="AboutCompany.html" class="nav-item">About Us</a></li>
+                <li><a href="Contact.html" class="underline">Contact Us</a></li>
+            </ul>
+        </div>
 
-        </body>
+
+        <!--Enter HTML Code Here-->
+        <h1>Contact</h1>
+
+        
+        <div class="footer-container">
+            <div class="footer-variant">
+                <h1>Elevated Dreams</h1>
+                <p>
+                    Here at Elevated Dreams we strive to give the most relaxing and 
+                    productive flying experience possible.
+                </p>
+            </div>
+            <div class="footer-variant">
+                <h2>Contact Us</h2>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: vpres007@uottawa.ca">Vinvent Préseault</a>
+                </div>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: aarsh081@uottawa.ca">Amin Arshadi</a>
+                </div>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: sdial064@uottawa.ca">Souleymane Diallo</a>
+                </div>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: chald090@uottawa.ca">Charlie Haldane</a>
+                </div>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: mzito042@uottawa.ca">Mounira Nihad Zitouni</a>
+                </div>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: kdhin052@uottawa.ca">Karen Dhindsa</a>
+                </div>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: dsala011@uottawa.ca">Dominic Salas</a>
+                </div>
+                <div>
+                    <img src='images/011-instagram-white.png' alt='instagram icon' class='icon'>
+                    <p>@ElevatedDreams</p>
+                </div>
+            </div>
+            <div class="footer-variant">
+                <h2>Key Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About The Products</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="AboutCompany.html">About Us</a></li>
+                    <li><br></li>
+                    <li>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik" style='text-decoration: underline;'>Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" style='text-decoration: underline;'> www.flaticon.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            var elements = document.getElementsByClassName("nav-item");
+
+            for (i = 0; i < elements.length; i++) {
+                elements[i].addEventListener('mouseenter', function(e) {
+                    this.classList.add('underline');
+                })
+                elements[i].addEventListener("mouseleave", function(e) {
+                    this.classList.remove('underline');
+                })
+            }
+        </script>
+    </body>
 </html>
