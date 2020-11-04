@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium Web">
+
+
         <style>
             * {
                 margin: 0;
                 padding: 0;
             }
 
+            body {background-image:url("image2.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 1450px 840px;
+            }
+
             #nav-bar {
                 width: 100%;
                 height: 10%;
+                position: fixed;
                 display: flex;
-                background-color: white;
-                /* font-family: Lora; */
+                background-color: transparent;
+                transition: ease 0.5s;
+                font-family: Titillium Web;
             }
 
             #nav-bar ul {
@@ -37,24 +50,6 @@
                 padding-bottom: 5px;
             }
 
-
-
-
-
-
-
-
-
-
-            body {background-image:url("images/image2.jpg");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 1450px 840px;
-
-            }
-
-
-            
             #header1 {
                 color: whitesmoke;
                 text-align: center;
@@ -70,14 +65,91 @@
                 text-align: center;
                 border-style: groove;
 
-            
+            }
+            #number1 {
+                text-align: center;
 
+            }
+            #number2 {
+                text-align: center;
 
+            }
+            #number3 {
+                text-align: center;
 
+            }
+            #number4 {
+                text-align: center;
 
+            }
+            #number5 {
+                text-align: center;
 
+            }
+            #number6 {
+                text-align: center;
 
+            }
+            #number7 {
+                text-align: center;
 
+            }
+            #number8 {
+                text-align: center;
+
+            }
+            #number9 {
+                text-align: center;
+            }
+
+            .footer-container {
+                padding: 5%;
+                color: white;
+                background-color: #2b2d2f;
+                display:flex;
+                justify-content: space-between;
+            }
+
+            .footer-variant {
+                width: 25%;
+            }
+
+            .footer-variant h1 {
+                color: skyblue;
+                font-family: Kalam;
+                margin-bottom: 10px;
+            }
+
+            .footer-variant h2 {
+                font-family: titillium web;
+            }
+
+            .footer-variant div {
+                display: flex;
+                margin-bottom: 5px;
+            }
+
+            .footer-variant div img {
+                padding-right: 5px;
+            }
+
+            .footer-variant ul {
+                list-style: none;
+                
+            }
+
+            .footer-variant li a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .footer-variant a{
+                text-decoration: none;
+                color: white;
+            }
+            .icon {
+                width: 20px;
+            }
         </style>
     </head>
 
@@ -88,21 +160,29 @@
 
 
     <body>
-
-
-
-
+        <!--COPY DIV "nav-bar" AND "<script>" BELOW-->
         <div id="nav-bar">
             <ul>
                 <li><a href="index.html" class="underline">Home</a></li>
-                <li><a href="about.html" class="nav-item">About Product</a></li>
+                <li><a href="about.html" class="nav-item">About The Products</a></li>
                 <li><a href="store.html" class="nav-item">Store</a></li>
                 <li><a href="FAQ.html" class="nav-item">FAQ</a></li>
-                <li><a href="AboutCompany.html" class="nav-item">About Company</a></li>
+                <li><a href="AboutCompany.html" class="nav-item">About Us</a></li>
             </ul>
         </div>
 
+        
+
         <script>
+            window.onscroll = function() {
+                const nav = document.getElementById('nav-bar');
+                if (window.pageYOffset > 750) {
+                    nav.style.backgroundColor = 'white';
+                } else {
+                    nav.style.backgroundColor = 'transparent';
+                }
+            }
+
             var elements = document.getElementsByClassName("nav-item");
 
             for (i = 0; i < elements.length; i++) {
@@ -119,18 +199,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-        
-
         <h1 id= "header1">About the product</h1>
 
         <p id="number1">The product that we are offering is a totally new idea that can be used in different types of viacles, buildings and even other products becuase who
@@ -140,19 +208,82 @@
 
         <h1 id= "header2">About the team</h1>
 
-        <p>We are a group of seven students from University of Ottawa who are working on a creative start up project. It is exiting to know that this group came together during
+        <p id="number2">We are a group of seven students from University of Ottawa who are working on a creative start up project. It is exiting to know that this group came together during
         the COVID-19 pandemic and all the work have been done on our own and absolutely remotely, wich we are very proud of!</p>
 
         <h1 id= "header3">Contact us</h1>
 
-        <p>Karen Dhindsa:            E-mail:kdhin052@uottawa.ca  6138793140 </p>
-        <p>Souleymane Diallo:        E-mail:sdial064@uottawa.ca  8193280741</p>
-        <p>Charlie Haldane:          E-mail:chald090@uottawa.ca  7059284783</p>
-        <p>Vincent Preseault:        E-mail:vpres007@uottawa.ca  7056986260</p>
-        <p>Dominic Salas:            E-mail:dsala011@uottawa.ca  6136187115</p>
-        <p>Mounira Nihad Zitouni:    E-mail:mzito042@uottawa.ca  8199444824</p>
-        <p>Amin Arshadi:             E-mail:aarsh081@uottawa.ca  6476172258</p>
+        <p id="number3">Karen Dhindsa:            E-mail:kdhin052@uottawa.ca  6138793140 </p>
+        <p id="number4">Souleymane Diallo:        E-mail:sdial064@uottawa.ca  8193280741</p>
+        <p id="number5">Charlie Haldane:          E-mail:chald090@uottawa.ca  7059284783</p>
+        <p id="number6">Vincent Preseault:        E-mail:vpres007@uottawa.ca  7056986260</p>
+        <p id="number7">Dominic Salas:            E-mail:dsala011@uottawa.ca  6136187115</p>
+        <p id="number8">Mounira Nihad Zitouni:    E-mail:mzito042@uottawa.ca  8199444824</p>
+        <p id="number9">Amin Arshadi:             E-mail:aarsh081@uottawa.ca  6476172258</p>
+
+
+
+
+
+
+        <div class="footer-container">
+            <div class="footer-variant">
+                <h1>Elevated Dreams</h1>
+                <p>
+                    Here at Elevated Dreams we strive to give the most relaxing and 
+                    productive flying experience possible.
+                </p>
+            </div>
+            <div class="footer-variant">
+                <h2>Contact Us</h2>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: vpres007@uottawa.ca">Vinvent Préseault</a>
+                </div>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: aarsh081@uottawa.ca">Amin Arshadi</a>
+                </div>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: sdial064@uottawa.ca">Souleymane Diallo</a>
+                </div>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: chald090@uottawa.ca">Charlie Haldane</a>
+                </div>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: mzito042@uottawa.ca">Mounira Nihad Zitouni</a>
+                </div>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: kdhin052@uottawa.ca">Karen Dhindsa</a>
+                </div>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: dsala011@uottawa.ca">Dominic Salas</a>
+                </div>
+                <div>
+                    <img src='images/011-instagram-white.png' alt='instagram icon' class='icon'>
+                    <p>@ElevatedDreams</p>
+                </div>
+            </div>
+            <div class="footer-variant">
+                <h2>Key Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About The Products</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="AboutCompany.html">About Us</a></li>
+                    <li><br></li>
+                    <li>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik" style='text-decoration: underline;'>Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" style='text-decoration: underline;'> www.flaticon.com</a></li>
+                </ul>
+            </div>
+        </div>
         
-        
+
+
     </body>
-    </html>
+</html>
