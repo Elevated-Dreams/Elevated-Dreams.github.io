@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium Web">
         <style>
 
            
@@ -40,11 +43,172 @@
                 border-bottom: black 1px solid;
                 padding-bottom: 5px;
             }
-            /*HERE*/
+
+            #banner{
+                max-height:400px;
+                overflow: hidden;
+            }
+
+            .banner-content {
+                text-align: center;
+                position: absolute;
+                top: 24%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color:  #2b2d2f;
+            }
+
+            .banner-content p {
+                font-size: 250%;
+                font-weight: bolder;
+                font-family: Kalam;
+            }
+
+            .banner-content img{
+                width: 300px;
+                height: 100px;
+            }
+
+            .questions-container {
+                display: flex;
+            }
+
+            .questions {
+                padding: 5%;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .questions h1 {
+                font-family: Kalam;
+                font-size: 300%;
+            }
+            .questions h2 {
+                font-family: titillium web;
+                font-size: 200%;
+                margin-bottom: 10px;
+                color: skyblue;
+            }
+
+            .question {
+                font-size: 145%;
+                margin-bottom: 25px;
+                font-family: titillium web;
+            }
+            
+            .answer {
+                margin-bottom: 40px;
+            }
+
+            .important {
+                color: skyblue;
+                font-size: 120%;
+            }
+
+            #header1 {
+                color: skyblue;
+                text-align: center;
+                border-style: groove;
+            }
+            #header2 {
+                color: whitesmoke;
+                text-align: center;
+                border-style: groove;
+            }
+            #header3 {
+                color: whitesmoke;
+                text-align: center;
+                border-style: groove;
+
+            }
+            #number1 {
+                text-align: center;
+
+            }
+            #number2 {
+                text-align: center;
+
+            }
+            #number3 {
+                text-align: center;
+
+            }
+            #number4 {
+                text-align: center;
+
+            }
+            #number5 {
+                text-align: center;
+
+            }
+            #number6 {
+                text-align: center;
+
+            }
+            #number7 {
+                text-align: center;
+
+            }
+            #number8 {
+                text-align: center;
+
+            }
+            #number9 {
+                text-align: center;
+            }
+
+            .footer-container {
+                padding: 5%;
+                color: white;
+                background-color: #2b2d2f;
+                display:flex;
+                justify-content: space-between;
+            }
+
+            .footer-variant {
+                width: 25%;
+            }
+
+            .footer-variant h1 {
+                color: skyblue;
+                font-family: Kalam;
+                margin-bottom: 10px;
+            }
+
+            .footer-variant h2 {
+                font-family: titillium web;
+            }
+
+            .footer-variant div {
+                display: flex;
+                margin-bottom: 5px;
+            }
+
+            .footer-variant div img {
+                padding-right: 5px;
+            }
+
+            .footer-variant ul {
+                list-style: none;
+                
+            }
+
+            .footer-variant li a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .footer-variant a{
+                text-decoration: none;
+                color: white;
+            }
+            .icon {
+                width: 20px;
+            }
         </style>
     </head>
     <body>
-        <!--COPY DIV "nav-bar" AND "<script>" BELOW-->
+        
         <div id="nav-bar">
             <ul>
                 <li><a href="index.html" class="underline">Home</a></li>
@@ -54,11 +218,188 @@
                 <li><a href="AboutCompany.html" class="nav-item">About Us</a></li>
             </ul>
         </div>
+        <div id="banner">
+            <img src="./images/faq-banner.jpg" alt="People Working">
+            <div class = "banner-content">
+                <p>Frequently Asked Questions</p>
+            </div>
+        </div>
 
+           
+            
+        <div class="questions">
+            
+            
+                <h2>General</h2>
+                <p class="question">Do you offer warranty?</p>
+                    <p class="answer">
+                        A minimun 5 year warranty is offered with every purchase with an additional charge to upgrade to an extended warranty.
+                        Customer satisfaction is very important to us, all waranties cover any damage done provided proof of so.
+                    </p>
+
+                    <p class="question">How do I install it?</p>
+                    <p class="answer">
+                        Installation is a tricky process. However, our team has made tutorials to help you get through it.
+                        Furthermore, if you still find yourself stuck reach out to us for further assistance.
+                    </p>
+
+                    <p class="question">How is your company helping the environment?</p>
+                    <p class="answer">
+                        We use <span class='important'>100% recycled plastic</span> in the manufacturing 
+                        of the plastic casing around our electronics. Also, we try as much as we can to 
+                        use recycled electronics from old screens. However, since these are much less 
+                        accessible than recycled plastic we sometimes have to resort to creating our 
+                        screen from non-recycled electronic parts.
+                    </p>
+
+                    <p class="question">How much does it cost?</p>
+                    <p class="answer">
+                        The cost for the basic screen (without the camera) is <span class='important'>$99</span>. 
+                        For the premium version that includes both the screen and the outside view camera, the cost 
+                        is <span class='important'>$149</span>.
+                    </p>
+          
+            
+                <h2>Products</h2>
+                <p class="question">How does the screen work?</p>
+                    <p class="answer">
+                        Every screen is mounted to the window with a camera between the screen 
+                        and the window. You are able to display any picture you want or choose 
+                        from the library provided in the picture library. The camera is used to 
+                        display the live images of the view outside for people who aren't afraid 
+                        of seeing what's outside. 
+                    </p>
+
+                    <p class="question">What materials are your prdoucts made of? </p>
+                    <p class="answer">
+                        The frame is made up of <a href="https://www.metalsupermarkets.com/metals/aluminum/aluminum-1100/">Aluminum 1100</a> 
+                        with carbon fibre fittings.
+                       
+                    </p>
+
+                    <p class="question">Is the display good?</p>
+                    <p class="answer">
+                        The display is a very important feature of our product, for that reason we have partnered with 
+                        Samsung to provde exceptional quality. Our screens are 4k HDR and range in sizes per requested by the customer.
+                    </p>
+
+                    <p class="question">Do you provide software updates?</p>
+                    <p class="answer">
+                        As well as just a product you are purchasing a service. Our devices are hooked up to the internet and connected to our server.
+                        Our software department will release updates to improve the functionality and efficiency of the product.
+                
+                    </p>
+            
+            
+                <h2>Shipping</h2>
+                <p class="question">What countries do you ship to?</p>
+                <p class="answer">
+                    We offer worldwide shipping!
+                </p>
+
+                <p class="question">How fast will I receive the product?</p>
+                <p class="answer">
+                    We offer 1-2 business day express shipping for North-American customers, 
+                    but we also offer shipping internationally that takes 
+                    <span class='important'>5-7 business days</span>.
+                </p>
+
+                <p class="question">How much does shipping cost?</p>
+                <p class="answer">
+                   Express shipping is an extra $12.00 CAD while standard national shipping is free.
+                   We also offer international shipping which is an extra $5.00 CAD.
+                </p>
+
+                <p class="question">My package has not arrived yet, what can I do?</p>
+                <p class="answer">
+                    If you are experiencing a delay in delivery contact our support and we will handle everything from there!
+                    Please have your confirmation email and credentials of payment ready.
+                </p>
+           
+           
+                <h2>Contact</h2>
+                <p class="question">What are your hours of operation?</p>
+                    <p class="answer">
+                        Our contact centre is on call 24/7 for all of your inquiries and assistance!
+                    </p>
+
+                    <p class="question">Where can we reach you?</p>
+                    <p class="answer">
+                        Our business emails and social media accounts are located at the bottom of the page. You can send an email or a message through those platforms. 
+                    </p>
+
+                    <p class="question">Do you have a phone service?</p>
+                    <p class="answer">
+                        As of right now we do not have contact via phone. However, our team is very dedicated to our customers and will respond in 1-2 buisness days through email.
+                    </p>
+
+                
+                <p class="question">Contact us if you have any other questions!</p>
+                    
+            </div>
+           
+        
+        </div>
+         <div class="footer-container">
+            <div class="footer-variant">
+                <h1>Elevated Dreams</h1>
+                <p>
+                    Here at Elevated Dreams we strive to give the most relaxing and 
+                    productive flying experience possible.
+                </p>
+            </div>
+            <div class="footer-variant">
+                <h2>Contact Us</h2>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: vpres007@uottawa.ca">Vinvent Préseault</a>
+                </div>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: aarsh081@uottawa.ca">Amin Arshadi</a>
+                </div>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: sdial064@uottawa.ca">Souleymane Diallo</a>
+                </div>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: chald090@uottawa.ca">Charlie Haldane</a>
+                </div>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: mzito042@uottawa.ca">Mounira Nihad Zitouni</a>
+                </div>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: kdhin052@uottawa.ca">Karen Dhindsa</a>
+                </div>
+                <div>
+                    <img src='images/email-white.png' alt='email icon' class='icon'> 
+                    <a href = "mailto: dsala011@uottawa.ca">Dominic Salas</a>
+                </div>
+                <div>
+                    <img src='images/011-instagram-white.png' alt='instagram icon' class='icon'>
+                    <p>@ElevatedDreams</p>
+                </div>
+            </div>
+            <div class="footer-variant">
+                <h2>Key Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About The Products</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="AboutCompany.html">About Us</a></li>
+                    <li><br></li>
+                    <li>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik" style='text-decoration: underline;'>Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" style='text-decoration: underline;'> www.flaticon.com</a></li>
+                </ul>
+            </div>
+        </div>
         <script>
             window.onscroll = function() {
                 const nav = document.getElementById('nav-bar');
-                if (window.pageYOffset > 750) {
+                if (window.pageYOffset > 400) {
                     nav.style.backgroundColor = 'white';
                 } else {
                     nav.style.backgroundColor = 'transparent';
@@ -76,6 +417,5 @@
                 })
             }
         </script>
-        <!--HERE-->
     </body>
 </html>
