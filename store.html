@@ -44,8 +44,37 @@
                 padding-bottom: 5px;
             }
 
+            .section-hero{
+                padding-top: 55px;
+                padding-bottom: 119px;
+            }
+            .section-content {
+                margin-left: auto;
+                margin-right: auto;
+                width: 692px;
+            }
 
-            /* Enter CSS Style Here */
+            .store {
+                padding: 5% 0%;
+                display: flex;
+                align-items: center;
+            }
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                width: 100%;
+            }
+            .store-product{
+                font-family: Kalam;
+                color: skyblue;
+                margin: 50px 0px 25px 0px;
+                text-align: center;
+            }
+
+            
+
+
 
 
             .footer-container {
@@ -110,15 +139,19 @@
                 <li><a href="AboutCompany.html" class="nav-item">About Us</a></li>
                 <li><a href="Contact.html" class="nav-item">Contact Us</a></li>
             </ul>
-        <div id="store products">
-            <div class="package">
-                <h1>Basic package</h1>
-                <img scr="basic package.jpg" alt="basic package"width="42" width="42" height="42" style="float:left">
-                <p>...</p>
-                <p id="button price">Buy now!</p>
-
+        <section class="section-hero">
+            <div class="section-content">
+                <div class="row">
+                    <div class="store">
+                        <h1>Basic Package</h1>
+                        <p class="store-product">Suprisingly affordable!
+                            <br>Wonderful!<br>Only 99$   </p>
+                            <button id="action-button">Buy Now!</button>
+                            <li><a href="about.html" class="nav-item">Learn More</a></li>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
 
 
