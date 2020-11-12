@@ -5,18 +5,19 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium Web">
         <style>
             * {
-                margin: 0;
-                padding: 0;
+                margin: 0px;
+                padding: 0px;
             }
 
-            body {
-                font-family: Lora;
+            body{
+                font-family: lora;
+                background-color: white;
             }
 
             #nav-bar {
                 width: 100%;
                 height: 10%;
-                position:fixed;
+                position: fixed;
                 display: flex;
                 background-color: transparent;
                 transition: ease 0.5s;
@@ -45,43 +46,53 @@
                 padding-bottom: 5px;
             }
 
-            #section-hero{
-            }
-            .section-content {
-                display: flex;
-                margin: auto;
-                background-color: white;
-                padding: 50px 0px;
+            #banner{
+                max-height:400px;
+                overflow: hidden;
             }
 
-            .store {
-                width: 25%;
-                height: 250px;
-                margin: 25px 50px 25px 50px;
-                padding: 0px 50px;
+            .banner-content {
                 text-align: center;
-                color: white;
-                /* border: white 3px solid; */
-                border-radius: 50px;
-                font-size: 125%;
+                position: absolute;
+                top: 24%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: black;
             }
-            .row {
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: row;
-                width: 100%;
-            }
-            .store-product{
+
+            .banner-content p {
+                font-size: 250%;
+                font-weight: bolder;
                 font-family: Kalam;
-                color: skyblue;
-                margin: 50px 0px 25px 0px;
-                text-align: center;
             }
 
-            
+            .banner-content img{
+                width: 300px;
+                height: 100px;
+            }
 
+            #goals{
+                display: flex;
+            }
 
+            .goals-content{
+                padding: 5%;
+                justify-content: center;
+                align-items: center;
+            }
 
+            .goals-content h1 {
+                font-family: Kalam;
+                font-size: 300%;
+                padding-bottom: 20px;
+            }
+
+            .goals-content p {
+                text-indent: 5%;
+                margin-bottom: 40px;
+                font-size: 110%;
+                object-fit: fill;
+            }
 
             .footer-container {
                 padding: 5%;
@@ -132,6 +143,12 @@
                 width: 20px;
                 height: 20px;
             }
+			.action-button{
+				float:center;
+			}
+			.store{
+				text-align:center;
+			}
         </style>
     </head>
     <body>
@@ -145,10 +162,13 @@
                 <li><a href="AboutCompany.html" class="nav-item">About Us</a></li>
                 <li><a href="Contact.html" class="nav-item">Contact Us</a></li>
             </ul>
+		</div>
         <div id="section-hero">
             <div class="section-content">
                 <div class="row">
                     <div class="store">
+						<br></br>
+						<br></br>
                         <h1>Basic Package</h1>
                         <p class="store-product">Suprisingly affordable!
                             Wonderful!
@@ -157,12 +177,12 @@
                         <button id="action-button">Buy Now!</button>
                         <li><a href="about.html" class="nav-item">Learn More</a></li>
                         <img src="images/basic package.jpg" width="240" height="240"
-                        alt="basic package" style="float:right"/>
+                        alt="basic package" style="float:center"/>
                     </div>
                 </div>
             </div>
-
-        
+		</div>
+        <br></br>
         <div class="footer-container">
             <div class="footer-variant">
                 <h1>Elevated Dreams</h1>
