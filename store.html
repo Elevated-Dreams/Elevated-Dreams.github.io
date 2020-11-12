@@ -16,9 +16,8 @@
             #nav-bar {
                 width: 100%;
                 height: 10%;
-                position:fixed;
                 display: flex;
-                background-color: transparent;
+                background-color: white;
                 transition: ease 0.5s;
                 font-family: Titillium Web;
             }
@@ -45,42 +44,57 @@
                 padding-bottom: 5px;
             }
 
-            #section-hero{
-            }
-            .section-content {
-                display: flex;
-                margin: auto;
-                background-color: white;
-                padding: 50px 0px;
-            }
 
-            .store {
-                width: 25%;
-                height: 250px;
-                margin: 25px 50px 25px 50px;
-                padding: 0px 50px;
-                text-align: center;
-                color: white;
-                /* border: white 3px solid; */
-                border-radius: 50px;
-                font-size: 125%;
-            }
-            .row {
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: row;
-                width: 100%;
-            }
+            .section-hero{display: contents;}
+
+            .section-content{display:flex;
+            margin:auto;
+            background-color: white;
+            padding:50px 0px}
+
+            .store{margin:25px 50px 25px 50 px;
+            padding:0px 50px;
+            font-size: 100%;
+            color: skyblue;}
+
+            .store h1{margin:25px 50px 25px 50 px;
+            padding:0px 50px;
+            font-size: 200%;
+            text-align: center;
+            color: skyblue;}
+
+            .row{display: flex;flex-wrap: wrap;
+            width:100%}
+
             .store-product{
                 font-family: Kalam;
                 color: skyblue;
-                margin: 50px 0px 25px 0px;
-                text-align: center;
+                margin-top: 20xp;
+                margin-bottom: 20xp;
+
             }
-
-            
-
-
+            .button {
+                padding: 10px 25px;
+                font-size: 110%;
+                font-family: Titillium Web;
+                text-decoration: none;
+                margin: 20px;
+                color: black;
+                border-radius: 20px;
+                background-color: skyblue;
+                font-weight: bold;
+            }
+            .store-button-container {
+                margin-top: 75px;
+                
+            }
+            .float-image{
+                float: right;
+                margin-right: 20px;
+                margin-bottom: 5px;
+                border: none;
+                padding: 2px;
+            }
 
 
             .footer-container {
@@ -145,22 +159,23 @@
                 <li><a href="AboutCompany.html" class="nav-item">About Us</a></li>
                 <li><a href="Contact.html" class="nav-item">Contact Us</a></li>
             </ul>
-        <div id="section-hero">
+        </div>
+
+
+        <div class="section-hero">
             <div class="section-content">
-                <div class="row">
-                    <div class="store">
-                        <h1>Basic Package</h1>
-                        <p class="store-product">Suprisingly affordable!
-                            Wonderful!
-                        </p>
-                        <p>Only 99$</p>
-                        <button id="action-button">Buy Now!</button>
-                        <li><a href="about.html" class="nav-item">Learn More</a></li>
-                        <img src="images/basic package.jpg" width="240" height="240"
-                        alt="basic package" style="float:right"/>
-                    </div>
-                </div>
-            </div>
+                  <div class="store">
+                      <h1>Basic Package</h1>
+                      <p class="store-product">Suprisingly afordable! worderful</p>
+                      <p>For only 99$</p>
+                        <button Id="action button"></button>Buy now!</button>
+                        <div>
+                            <p><a href="about.html" class='button'>Learn more!</a></p>
+                        </div>
+                  </div>
+                  <img src="basic-package.jpg" width="240" height="240" alt="basic package" class="float-image" >
+            </div>  
+        </div>
 
         
         <div class="footer-container">
