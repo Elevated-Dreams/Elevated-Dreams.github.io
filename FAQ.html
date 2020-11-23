@@ -5,14 +5,18 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium Web">
         <style>
-
-           
             * {
                 margin: 0;
                 padding: 0;
             }
 
+            body {
+                font-family: Lora;
+                color: #2b2d2f;
+            }
+
             #nav-bar {
+                z-index: 5;
                 width: 100%;
                 height: 10%;
                 position: fixed;
@@ -81,80 +85,29 @@
 
             .questions h1 {
                 font-family: Kalam;
-                font-size: 300%;
+                font-size: 250%;
+                margin-bottom: 5px;
+                color: skyblue;
             }
             .questions h2 {
                 font-family: titillium web;
                 font-size: 200%;
-                margin-bottom: 10px;
                 color: skyblue;
             }
 
             .question {
                 font-size: 145%;
-                margin-bottom: 25px;
+                margin-bottom: 1%;
                 font-family: titillium web;
             }
             
             .answer {
-                margin-bottom: 40px;
+                margin-bottom: 2%;
             }
 
             .important {
-                color: skyblue;
-                font-size: 120%;
-            }
-
-            #header1 {
-                color: skyblue;
-                text-align: center;
-                border-style: groove;
-            }
-            #header2 {
-                color: whitesmoke;
-                text-align: center;
-                border-style: groove;
-            }
-            #header3 {
-                color: whitesmoke;
-                text-align: center;
-                border-style: groove;
-
-            }
-            #number1 {
-                text-align: center;
-
-            }
-            #number2 {
-                text-align: center;
-
-            }
-            #number3 {
-                text-align: center;
-
-            }
-            #number4 {
-                text-align: center;
-
-            }
-            #number5 {
-                text-align: center;
-
-            }
-            #number6 {
-                text-align: center;
-
-            }
-            #number7 {
-                text-align: center;
-
-            }
-            #number8 {
-                text-align: center;
-
-            }
-            #number9 {
-                text-align: center;
+                
+                font-weight: bold;
             }
 
             .footer-container {
@@ -211,12 +164,11 @@
         
         <div id="nav-bar">
             <ul>
-                <li><a href="index.html" class="underline">Home</a></li>
+                <li><a href="index.html" class="nav-item">Home</a></li>
                 <li><a href="about.html" class="nav-item">About The Products</a></li>
                 <li><a href="store.html" class="nav-item">Store</a></li>
-                <li><a href="FAQ.html" class="nav-item">FAQ</a></li>
+                <li><a href="FAQ.html" class="underline">FAQ</a></li>
                 <li><a href="AboutCompany.html" class="nav-item">About Us</a></li>
-                <li><a href="Contact.html" class="nav-item">Contact Us</a></li>
             </ul>
         </div>
         <div id="banner">
@@ -225,23 +177,16 @@
                 <p>Frequently Asked Questions</p>
             </div>
         </div>
-
-           
-            
         <div class="questions">
-            
-            
-                <h2>General</h2>
-                <p class="question">Do you offer warranty?</p>
+                <h1>General</h1>
+                <p class="question">Do you offer a warranty?</p>
                     <p class="answer">
-                        A minimun 5 year warranty is offered with every purchase with an additional charge to upgrade to an extended warranty.
-                        Customer satisfaction is very important to us, all waranties cover any damage done provided proof of so.
+                        A minimum <span class="important">5 year warranty</span> is offered with every purchase with an additional charge to upgrade to an extended warranty. Customer satisfaction is very important to us, all warranties cover any and all defects or manufacturer errors. This includes repair or replacement or the product with no additional costs.
                     </p>
 
                     <p class="question">How do I install it?</p>
                     <p class="answer">
-                        Installation is a tricky process. However, our team has made tutorials to help you get through it.
-                        Furthermore, if you still find yourself stuck reach out to us for further assistance.
+                        Installation is quick and easy! However, if the <span class="important">startup guide</span> (provided when purchasing the item) isn’t easy for you to follow, our team has made <span class="important">tutorials on our Instagram</span> page to help. Furthermore, if you still find yourself stuck, you can always reach out to us for further assistance.
                     </p>
 
                     <p class="question">How is your company helping the environment?</p>
@@ -261,47 +206,38 @@
                     </p>
           
             
-                <h2>Products</h2>
+                <h1>Products</h1>
                 <p class="question">How does the screen work?</p>
                     <p class="answer">
-                        Every screen is mounted to the window with a camera between the screen 
-                        and the window. You are able to display any picture you want or choose 
-                        from the library provided in the picture library. The camera is used to 
-                        display the live images of the view outside for people who aren't afraid 
-                        of seeing what's outside. 
+                        Every screen is mounted to the window with a camera between the screen and the window. You are able to display any picture you want or choose from the library provided in the picture library. The camera is used to display the live images of the view outside for people who want to have an outside view.
                     </p>
 
-                    <p class="question">What materials are your prdoucts made of? </p>
+                    <p class="question">What materials are your products made of?</p>
                     <p class="answer">
-                        The frame is made up of <a href="https://www.metalsupermarkets.com/metals/aluminum/aluminum-1100/">Aluminum 1100</a> 
-                        with carbon fibre fittings.
-                       
+                        The frame is made up of <a href="https://www.metalsupermarkets.com/metals/aluminum/aluminum-1100/" class="important" style="color:#2b2d2f">Aluminum 1100</a> 
+                        with carbon fibre fittings completed with plastic casing.                       
                     </p>
 
-                    <p class="question">Is the display good?</p>
+                    <p class="question">How good is the screen quality?</p>
                     <p class="answer">
-                        The display is a very important feature of our product, for that reason we have partnered with 
-                        Samsung to provde exceptional quality. Our screens are 4k HDR and range in sizes per requested by the customer.
+                        The display is a very important feature of our product, for that reason we have partnered with Samsung to provide exceptional quality. Our screens are <span class="important">4k HDR</span> and range in sizes.
                     </p>
 
                     <p class="question">Do you provide software updates?</p>
                     <p class="answer">
-                        As well as just a product you are purchasing a service. Our devices are hooked up to the internet and connected to our server.
-                        Our software department will release updates to improve the functionality and efficiency of the product.
-                
+                        You are not only purchasing a screen you are purchasing a service. Our devices are linked via the internet and connected to our servers. Our software department will release updates to improve the functionality and efficiency of the product.
                     </p>
             
             
-                <h2>Shipping</h2>
+                <h1>Shipping</h1>
                 <p class="question">What countries do you ship to?</p>
                 <p class="answer">
-                    We offer worldwide shipping!
+                    We offer <span class="important">worldwide</span> shipping!
                 </p>
 
                 <p class="question">How fast will I receive the product?</p>
                 <p class="answer">
-                    We offer 1-2 business day express shipping for North-American customers, 
-                    but we also offer shipping internationally that takes 
+                    We offer 1-2 business day express shipping for North-American customers, but we also offer shipping internationally that takes 
                     <span class='important'>5-7 business days</span>.
                 </p>
 
@@ -313,35 +249,29 @@
 
                 <p class="question">My package has not arrived yet, what can I do?</p>
                 <p class="answer">
-                    If you are experiencing a delay in delivery contact our support and we will handle everything from there!
-                    Please have your confirmation email and credentials of payment ready.
+                    If you are experiencing a delay in delivery, we’d like to convey our sincerest apologies. Let us help you solve this problem by <span class="important">contacting our support team</span> and we will handle everything from there! Please have your confirmation email and credentials of payment ready.
                 </p>
            
            
-                <h2>Contact</h2>
+                <h1>Contact</h1>
                 <p class="question">What are your hours of operation?</p>
                     <p class="answer">
-                        Our team is active business hours and will respond to emails 7 days a week.
+                        Our team is available during regular <span class="important">9 to 5 business hours</span> and will respond to emails 7 days a week.
                     </p>
 
                     <p class="question">Where can we reach you?</p>
                     <p class="answer">
-                        Our business emails and social media accounts are located at the bottom of the page. You can send an email or a message through those platforms. 
+                        Our business emails and social media account are located at the bottom of every page. You can send an email or a message through those platforms.
                     </p>
 
                     <p class="question">Do you have a phone service?</p>
                     <p class="answer">
-                        As of right now we do not have contact via phone. However, our team is very dedicated to our customers and will respond in 1-2 buisness days through email.
+                        As of right now we do not have contact via phone. However, our team is very dedicated to our customers and will respond in 1-2 business days through email.
                     </p>
-
-                
-                <p class="question">Contact us if you have any other questions!</p>
-                    
+                <p class="question" style="font-size: 160%; margin-bottom: 0;">Don't hesitate to contact us if you have any further questions!</p>
             </div>
-           
-        
         </div>
-         <div class="footer-container">
+        <div class="footer-container">
             <div class="footer-variant">
                 <h1>Elevated Dreams</h1>
                 <p>
@@ -353,7 +283,7 @@
                 <h2>Contact Us</h2>
                 <div>
                     <img src='images/email-white.png' alt='email icon' class='icon'> 
-                    <a href = "mailto: vpres007@uottawa.ca">Vinvent Préseault</a>
+                    <a href = "mailto: vpres007@uottawa.ca">Vincent Préseault</a>
                 </div>
                 <div>
                     <img src='images/email-white.png' alt='email icon' class='icon'> 
@@ -381,7 +311,7 @@
                 </div>
                 <div>
                     <img src='images/011-instagram-white.png' alt='instagram icon' class='icon'>
-                    <p>@ElevatedDreams</p>
+                    <a href="https://www.instagram.com/elevateddreams4uottawa/">@ElevatedDreams</a>
                 </div>
             </div>
             <div class="footer-variant">
@@ -400,7 +330,7 @@
         <script>
             window.onscroll = function() {
                 const nav = document.getElementById('nav-bar');
-                if (window.pageYOffset > 400) {
+                if (window.pageYOffset > 50) {
                     nav.style.backgroundColor = 'white';
                 } else {
                     nav.style.backgroundColor = 'transparent';
