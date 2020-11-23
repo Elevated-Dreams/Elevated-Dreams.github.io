@@ -14,9 +14,11 @@
             }
 
             #nav-bar {
+                z-index: 5;
                 width: 100%;
                 height: 10%;
                 display: flex;
+                position: fixed;
                 background-color: transparent;
                 transition: ease 0.5s;
                 font-family: Titillium Web;
@@ -45,23 +47,70 @@
             }
 
             /* Enter CSS Style Below */
+            #banner{
+                max-height:400px;
+                overflow: hidden;
+                
+            }
 
-
-            .header1 {
-                color: rgb(25, 122, 202);
+            .banner-content {
                 text-align: center;
-                border-style: groove;
+                position: absolute;
+                top: 24%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color:  #2b2d2f;
             }
 
-            .paragraph {
-                text-align: center;
+            .banner-content p {
+                font-size: 250%;
+                font-weight: bolder;
+                font-family: Kalam;
+                color: skyblue;
             }
 
-            #container {display:flex;
+            .banner-content img{
+                width: 300px;
+                height: 100px;
             }
 
+            .product {
+                display: flex;
+            }
 
-            /* Enter CSS Style Above */
+            .product-copy {
+                padding: 5%;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+            }
+
+            .product-copy h1 {
+                font-family: Kalam;
+                font-size: 300%;
+                margin-bottom: 5%;
+            }
+
+            .product-copy p {
+                font-family: Titillium web;
+                font-size: 150%;
+            }
+
+            .button {
+                padding: 10px 25px;
+                font-size: 110%;
+                font-family: Titillium Web;
+                text-decoration: none;
+                color: black;
+                border-radius: 20px;
+                background-color: skyblue;
+                font-weight: bold;
+            }
+
+            .button-container {
+                margin-top: 5%;
+            }
+
 
             .footer-container {
                 padding: 5%;
@@ -122,47 +171,48 @@
                 <li><a href="store.html" class="nav-item">Store</a></li>
                 <li><a href="FAQ.html" class="nav-item">FAQ</a></li>
                 <li><a href="AboutCompany.html" class="nav-item">About Us</a></li>
-                <li><a href="Contact.html" class="nav-item">Contact Us</a></li>
             </ul>
         </div>
 
-
-        
-        <!--Enter HTML Code Below-->
-        <!--
-            Remember, you are making a page that describes the products. You should not have any information 
-            about the team members or any contact information.
-        -->
-
-        <div id="container">
-            <img src="image2.jpg">
-
-            <img width="3%">
-            
-            <div>
-            
-                <p class="paragraph">The products that we are offering is a totally new idea that can be used in different types of vehicles and buildings as well as airplanes, which is the main focus of our company. What makes our invetion even more user friendly is the light weight of the screens that can be easily carried. Who does not want a light high-quality screen which enables them to watch everything on a
-                    super high-resolution screen? Making the passengers more relaxed during the flight is another purpose of our screens that lets the users spend their time on the airplane just like they are sitting on their couch and enjoying a hot coffee cup! </p>
-                
-                <h1 class="header1">Basic Package</h1>
-                <p class="paragraph">This screen is perfect for someone who finds the view outside their plane window distracting or frightening. It will allow you to have a
-                    stagnant picture or color of your choice to completely block the view. This will help you accomplish more work and be more productive during your flight as well as helping you with mitigate your fear. Our basic Package is the most economic screen that we offer but it is still has one of the highest resolutions in the screens' world.</p>
-        
-                <h1 class="header1">Premium Package</h1>
-                <p class="paragraph">This screen is perfect for someone who, at times, enjoys the view outside a plane window. With the camera mounted in the back of the screen you can either display the
-                    live pictures outside or display a stagnant picture or color. Whatever you like! The premium version will increase your productivity when it's time to work but display the beautiful view on your down time. </p>
-        
-                <h1 class="header1">Travel Case</h1>
-                <p class="paragraph">The Travel Case is a sleeve that you can insert your screen into to protect it. An interesting feature that Travel Case has is its very light weight, which makes it stand out. This will ensure your screens protection at all times
-                    while still being small and portable enough to fit inside your carry-on. </p>
-                
-            
+        <div id="banner">
+            <img src="./images/Untitled.png" alt="store">
+            <div class = "banner-content">
+                <p>About Our Products</p>
             </div>
-            
         </div>
 
-        <!--Enter HTML Code Above-->
-
+        <div class="all-products">
+            <div class="product">
+                <div class="product-copy">
+                    <h1>Basic Package</h1>
+                    <p>This screen is perfect for someone who finds the view outside their plane window distracting or frightening. It will allow you to have a stagnant picture or color of your choice to completely block the view. This will help you accomplish more work and be more productive during your flight as well as helping you with mitigate your fear. Our basic Package is the most economic screen that we offer but it is still has one of the highest resolutions in the screens' world.</p>
+                    <div class="button-container">
+                        <a href="" class='button'>Buy now!</a>
+                    </div>
+                </div>
+                <img src="images/forest-window.png" alt="Window view" style="width: 40%; height: 700px; object-fit: cover;">
+            </div>
+            <div class="product">
+                <img src="images/window view.jpg" style="width: 40%; height: 700px; object-fit: cover;">
+                <div class="product-copy">
+                    <h1>Premium Package</h1>
+                    <p>This screen is perfect for someone who, at times, enjoys the view outside a plane window. With the camera mounted in the back of the screen you can either display the live pictures outside or display a stagnant picture or color. Whatever you like! The premium version will increase your productivity when it's time to work but display the beautiful view on your down time.</p>
+                    <div class="button-container">
+                        <a href="store.html" class='button'>Buy now!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-copy">
+                    <h1>Travel case</h1>
+                    <p>The Travel Case is a sleeve that you can insert your screen into to protect it. An interesting feature that Travel Case has is its very light weight, which makes it stand out. This will ensure your screens protection at all times while still being small and portable enough to fit inside your carry-on.</p>
+                    <div class="button-container">
+                        <a href="store.html" class='button'>Buy now!</a>
+                    </div>
+                </div>
+                <img src="images/travel-case.jpg" style="width: 40%; height: 700px; object-fit: cover;">
+            </div>
+        </div>
         <div class="footer-container">
             <div class="footer-variant">
                 <h1>Elevated Dreams</h1>
@@ -222,7 +272,7 @@
         <script>
             window.onscroll = function() {
                 const nav = document.getElementById('nav-bar');
-                if (window.pageYOffset > 750) {
+                if (window.pageYOffset > 50) {
                     nav.style.backgroundColor = 'white';
                 } else {
                     nav.style.backgroundColor = 'transparent';
