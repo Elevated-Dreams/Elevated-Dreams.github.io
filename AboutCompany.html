@@ -19,6 +19,7 @@
             }
 
             #nav-bar {
+                z-index: 5;
                 width: 100%;
                 height: 10%;
                 position: fixed;
@@ -156,7 +157,6 @@
                 <li><a href="store.html" class="nav-item">Store</a></li>
                 <li><a href="FAQ.html" class="nav-item">FAQ</a></li>
                 <li><a href="AboutCompany.html" class="underline">About Us</a></li>
-                <li><a href="Contact.html" class="nav-item">Contact Us</a></li>
             </ul>
         </div>
 
@@ -208,7 +208,7 @@
                 <h2>Contact Us</h2>
                 <div>
                     <img src='images/email-white.png' alt='email icon' class='icon'> 
-                    <a href = "mailto: vpres007@uottawa.ca">Vinvent Préseault</a>
+                    <a href = "mailto: vpres007@uottawa.ca">Vincent Préseault</a>
                 </div>
                 <div>
                     <img src='images/email-white.png' alt='email icon' class='icon'> 
@@ -255,7 +255,7 @@
         <script>
             window.onscroll = function() {
                 const nav = document.getElementById('nav-bar');
-                if (window.pageYOffset > 400) {
+                if (window.pageYOffset > 50) {
                     nav.style.backgroundColor = 'white';
                 } else {
                     nav.style.backgroundColor = 'transparent';
